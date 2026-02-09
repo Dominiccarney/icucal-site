@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — ICUcal</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+            color: #1d1d1f;
+            line-height: 1.6;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+        h1 { font-size: 32px; font-weight: 600; margin-bottom: 8px; }
+        .updated { font-size: 14px; color: #6e6e73; margin-bottom: 32px; }
+        h2 { font-size: 20px; font-weight: 600; margin-top: 28px; margin-bottom: 10px; }
+        p { margin-bottom: 12px; }
+        ul { padding-left: 20px; margin-bottom: 12px; }
+        li { margin-bottom: 6px; }
+        a { color: #0066CC; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .footer {
+            margin-top: 48px;
+            padding-top: 16px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #6e6e73;
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: #1e1e1e; color: #e0e0e0; }
+            .updated { color: #999; }
+            a { color: #4a9eff; }
+            .footer { border-top-color: #3a3a3a; color: #999; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: February 9, 2026</p>
+
+    <h2>Overview</h2>
+    <p>ICUcal is a macOS desktop application for ICU physician shift scheduling and invoice management. This policy describes how the app handles your data.</p>
+
+    <h2>Data we access</h2>
+    <p>ICUcal requests access to your Google account with the following permissions:</p>
+    <ul>
+        <li><strong>View your calendars</strong> — To list your Google Calendars so you can select which one to use for scheduling.</li>
+        <li><strong>View and edit events on your calendars</strong> — To read existing shift assignments, create new shift events, and delete events when you undo a schedule.</li>
+    </ul>
+
+    <h2>How your data is used</h2>
+    <p>Calendar data is used solely to display shift schedules within the app and to generate PDF invoices and reports. ICUcal does not use your data for any other purpose.</p>
+
+    <h2>Data storage</h2>
+    <ul>
+        <li><strong>OAuth tokens</strong> are stored locally on your Mac in the macOS Keychain, which is encrypted and protected by your system password.</li>
+        <li><strong>App settings</strong> (physician names, shift configurations, billing rates) are stored locally in UserDefaults on your Mac.</li>
+        <li><strong>No data is sent to external servers.</strong> ICUcal communicates only with Google's Calendar API to read and write calendar events. There is no ICUcal server, analytics, or telemetry.</li>
+    </ul>
+
+    <h2>Data sharing</h2>
+    <p>ICUcal does not sell, share, or transfer your data to any third parties. Your data stays on your device and in your Google account.</p>
+
+    <h2>Data retention</h2>
+    <p>ICUcal does not retain your calendar data. Events are fetched from Google Calendar each time you use the app and are not cached or stored locally. If you remove ICUcal, no calendar data remains on your device.</p>
+
+    <h2>Revoking access</h2>
+    <p>You can revoke ICUcal's access to your Google account at any time by visiting your <a href="https://myaccount.google.com/permissions">Google Account Permissions</a> page and removing ICUcal.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, please open an issue on the <a href="https://github.com/Dominiccarney/icucal-site">ICUcal site repository</a>.</p>
+
+    <div class="footer">
+        <p><a href="index.html">ICUcal</a> &middot; &copy; 2026 Dominic Carney</p>
+    </div>
+</body>
+</html>
