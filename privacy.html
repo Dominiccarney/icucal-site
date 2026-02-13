@@ -39,7 +39,7 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: February 9, 2026</p>
+    <p class="updated">Last updated: February 13, 2026</p>
 
     <h2>Overview</h2>
     <p>ICUcal is a macOS desktop application for ICU physician shift scheduling and invoice management. This policy describes how the app handles your data.</p>
@@ -59,6 +59,16 @@
         <li><strong>OAuth tokens</strong> are stored locally on your Mac in the macOS Keychain, which is encrypted and protected by your system password.</li>
         <li><strong>App settings</strong> (physician names, shift configurations, billing rates) are stored locally in UserDefaults on your Mac.</li>
         <li><strong>No data is sent to external servers.</strong> ICUcal communicates only with Google's Calendar API to read and write calendar events. There is no ICUcal server, analytics, or telemetry.</li>
+    </ul>
+
+    <h2>Protection of Google user data</h2>
+    <p>Security procedures are in place to protect the confidentiality of your data. ICUcal protects your Google user data with the following measures:</p>
+    <ul>
+        <li><strong>Encryption at rest</strong> — OAuth tokens are stored in the macOS Keychain, which uses hardware-backed encryption to protect your credentials.</li>
+        <li><strong>Encryption in transit</strong> — All communication with Google APIs is conducted over HTTPS/TLS, ensuring your data is encrypted during transmission.</li>
+        <li><strong>Minimal data access</strong> — ICUcal only requests the calendar scopes necessary for its functionality and does not access any other Google user data.</li>
+        <li><strong>No server-side storage</strong> — ICUcal has no backend server. Your Google data is processed entirely on your local device and is never transmitted to or stored on any third-party server.</li>
+        <li><strong>No data retention</strong> — Calendar data is fetched on demand and held only in application memory during use. It is not written to disk or cached.</li>
     </ul>
 
     <h2>Data sharing</h2>
